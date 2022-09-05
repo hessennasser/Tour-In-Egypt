@@ -1,0 +1,193 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+}
+.main-page{
+    background-image: url(images/cover-1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.header{
+    width: 100%;
+    height: 80px;
+}
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+/* Small */
+@media (min-width: 768px)
+{.container {
+    width: 750px;
+}
+.first-sec .container {
+    height: 60vh !important;
+}
+.first-sec .container h2{
+    font-size: 18px;
+}
+}
+/* Medium */
+@media (min-width: 992px) {
+.container {
+   width: 970px;
+}
+}
+/* Large */
+@media (min-width: 1200px) {
+.container {
+    width: 1170px;
+}
+}
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .container img{
+    width: 60px;
+    margin: 20px
+}
+.header .container .links ul{
+    list-style-type: none;
+}
+.header .container .links ul li{
+    display: inline-block;
+}
+.header .container .links ul a{
+    text-decoration: none;
+    color: #ff2600;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 15px;
+    transition: .4s;
+}
+.header .container .links ul a:hover{
+    color: #911600;
+}
+.first-sec .container{
+    height: 30vh;
+    background-image: url(images/cover-2.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 5px #1414148f, -5px -5px 5px #1414148f;
+    border-radius: 15px;
+    transition: .4s;
+}
+.first-sec .container:hover{
+    transform: scale(1.02);
+    box-shadow: 5px 5px 5px #ff2e2e46, -5px -5px 5px #ff2e2e46;
+}
+.first-sec .container:hover h2{
+    background: #00000070;
+    color: #ff2600;
+}
+.first-sec .container h2{
+    display: block;
+    width: 100%;
+    background: #00000050;
+    color: #fff;
+    font-size: 24px;
+    padding: 15px;
+    text-align: center;
+    font-weight: 900;
+}
+.first-sec .container h2 span{
+    font-size: 30px;
+    color: #ff2600;
+}
+.secound-sec .container{
+    background-color: #fff;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: repeat(auto-fill, 1fr);
+    gap: 20px 20px;
+    text-align: center;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.secound-sec .container .card{
+    background-color: #6868688f;
+    padding: 20px;
+    height: fit-content;
+    margin: 20px;
+    box-shadow: 5px 5px 5px #1414148f, -5px -5px 5px #1414148f;
+    border-radius: 15px;
+    transition: .4s;
+}
+.secound-sec .container .card:hover img{
+    transform: scale(1.1) rotate(1deg);
+}
+.secound-sec .container .card img{
+    width: 180px;
+    border-radius: 20px;
+    height: 270px;
+    transition: .4s;
+}
+.secound-sec .container .card h2{
+    color: #ff2600;
+    padding: 10px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.secound-sec .container .card:hover h2{
+    color: #911600;
+}
+.secound-sec .container .card p{
+    font-weight: 500;
+    margin: 35px 0;
+}
+.secound-sec .container .card a{
+    text-decoration: none;
+    display: block;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+    background-color: #496c94b2;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    transition: .4s;
+}
+.secound-sec .container .card a:hover{
+    background-color: #636363b2;
+}
+.footer .container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding:20px;
+    flex-direction: column;
+}
+.footer .profile-link{
+    text-decoration: none;
+    color: #ff2600;
+    font-size: 22px;
+    font-weight: 600;
+}
+.footer p{
+    font-size: 22px;
+    font-weight: 600;
+    color: #aaa;
+}
+@media (max-width: 768px){
+    .header .container img{
+        width: 45px;
+    }
+    .header .container .links ul a{
+        font-size: xx-small;
+        margin:0 0 0 5px;
+    }
+    .first-sec .container h2{
+        font-size: 16px;
+    }
+}
